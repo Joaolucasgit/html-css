@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Testando tamanhos de imagens</h1>
+    <picture>
+        <source media="(max-width: 500px)" srcset="img-pequena.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="img-media.png" type="image/png">
+        <img src="img-grande.png" alt="imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <audio preload="none" controls loop>
+        <source src="audio/guanacast-33.mp3" type="audio/mpeg">
+    </audio> <br>
+    <h2><a href="audio/guanacast-33.mp3" download="guanacast-33.mp3" type="audio/mpeg">download guanacast</a></h2>
+</body>
+</html>

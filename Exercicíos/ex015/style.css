@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(73, 73, 134);
+}
+
+h1, h2 {
+    color: white;
+}
+
+p {
+    color: rgb(163, 3, 3);
+}
+
+mark {
+    padding: 7px;
+    color: white;
+    background-color: green;
+}
+
+a:hover {
+    background-color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    padding: 7px;
+    border-radius:20px;
+}

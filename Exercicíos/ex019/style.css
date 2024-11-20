@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+
+/*
+ID em CSS -> #
+CLASS em CSS -> .
+*/
+body {
+    background-color: rgba(0, 0, 0, 0.150);
+}
+
+#title-principal {
+    color: rgb(117, 87, 53);
+}
+
+h1{
+    color: rgb(135,121,78);
+    font: oblique 700 40px  Arial;
+}
+
+h2{
+    color: rgb(109,135,100);
+    font: normal 400 25px Verdana;
+}
+
+p {
+    color: rgb(100,118,135);
+}

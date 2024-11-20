@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML5</title>
+    <style>
+        video {
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Inserindo Vídeos localmente</h1>
+    <p>Vídeos hospedados localmente</p>
+
+    <a href="https://gustavoguanabara.guthub.io">
+        <video controls width="600px" poster="midia/paisagem(2).jpg">
+            <source src="midia/Aguascristalinas.mp4.mp4" type="video/mp4">
+            <source src="midia/Aguascristalinas.webm.webm" type="video/webm">
+            <p>Seu navegador não é compatível com formatos de vídeos.
+            </p>
+        </video>
+    </a>
+
+    <h1>Inserindo vídeos externamente</h1>
+
+    <a href="https://gustavoguanabara.github.io" target="-blank"><iframe width="560" height="315" src="https://www.youtube.com/embed/i5Z5_bKWsfc?si=QshrMgA22eDIzOSO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></a>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Element</title>
+    <style>
+        /*
+        #  = id
+        .  = class
+        :  = Pseudo-class
+        :: = Pseudo-Elementos
+        >  = Children
+        */
+        a {
+            color: black;
+            text-decoration: underline;
+            font-size: 1.5em;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a:hover {
+            background-color: darkgray;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .especial::before {
+            content: '-> ';
+        }
+
+        .especial::after {
+            content: ' Acesse novamente';
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        h2::first-letter{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            font-weight: 100;
+            text-decoration: underline;
+        }
+
+        h2::first-line {
+           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.cursoemvideo.com" class="especial">site cursoemvideo</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" >canal youtube</a></li>
+        <li><a href="https://gustavoguanabara.github.io" class="especial">Github </a></li>
+    </ul>
+
+    <h2>Usando first-letter em css</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias quidem nostrum neque ipsum iusto nulla beatae, repellat quisquam sit ullam error eligendi, sunt provident possimus iste iure velit ut nihil.</p>
+</body>
+</html>
