@@ -3,97 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Primeiro Exercício</title>
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        #sessao_top {
-            display: inline-block;
-            margin-bottom: 20px;
-        }
-
-        .child_sessao_top {
-            display: inline-block;
-            margin: auto;
-        }
-
-        #sessao_top_right {
-            margin-left: 50px;
-        }
-
-        header {
-            background-image: linear-gradient(to right, rgb(75, 143, 170),rgb(133, 201, 228),rgb(162, 212, 231));
-            height: 115px;
-            width: 97%;
-            display: inline-block;
-        }
-
-        .header {
-            
-        }
-
-        #img {
-            width: 60px;
-            height: 60px;
-            margin-left: 400px;
-            margin-bottom: 10px;
-        }
-
-        #img > img {
-            border-radius: 100px;
-            border: dashed 2px white;
-            width: 55px;
-            height: 55px;
-        }
-
-        nav {
-           margin-top: 40px;
-        }
-
-        .nav_anchor {
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .header > a:hover {
-            text-decoration: underline;
-        }
-
-        .main {
-            display: inline-block;
-            width: 50%;
-        }
-    </style>
+    <title>Primeiro código HTML</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="sessao_top">
-        <div class="child_sessao_top" id="sessao_top_left">@site-exemplo</div>
-        <div class="child_sessao_top" id="sessao_top_right">Praticando HTML e CSS</div>
-    </section>
+    <aside id="content_top">
+        <div class="child_aside_top" id="div_1">@site de exemplo</div>
+        <div class="child_aside_top" id="div_2">Praticando <abbr title="Hiper text markup language">HTML</abbr> e <abbr title="Cascading style sheets">CSS</abbr></div>
+    </aside>
     <header>
-        <nav class="header">
-            <a href="#" class="nav_anchor">Home</a>
-            <a href="#" class="nav_anchor">Notícias</a>
-            <a href="#" class="nav_anchor">Fale conosco!</a>
-        </nav>
-
-        <span id="img" class="header">
+        <div class="child_header" id="div_left">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Noticias</a>
+                <a href="#">Contato</a>
+            </nav>
+        </div>
+        <div class="child_header" id="div_right">
             <img src="../../../../logo pienezza/pienezzaimg.jpg" alt="logo pienezza">
-        </span>
+        </div>
     </header>
-    
     <main>
-        <section class="main">
-            ola
-        </section>
-        <aside class="main">
-            ola
-        </aside>
-    </main>
+            <section class="child_main" id="content_left">
+
+            </section>
+            <aside class="child_main" id="content_right">
+
+            </aside>
+
+        <div class="child_main" id="content_left_bottom">
+
+        </div>
+
+        <div class="child_main" id="content_right_bottom">
+
+        </div>
+
+    </main> <br>
 </body>
 </html>
