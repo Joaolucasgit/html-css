@@ -1,28 +1,48 @@
-@charset "UTF-8";
+@charset "utf-8";
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
-/*
-ID em CSS -> #
-CLASS em CSS -> .
-*/
 body {
-    background-color: rgba(0, 0, 0, 0.150);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightsteelblue;
 }
 
-#title-principal {
-    color: rgb(117, 87, 53);
+#titulo-principal {
+    background-color:#293336;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-h1{
-    color: rgb(135,121,78);
-    font: oblique 700 40px  Arial;
+.sessão {
+    color: #385861;
+    margin: 10px 0px 10px 5px;
 }
 
-h2{
-    color: rgb(109,135,100);
-    font: normal 400 25px Verdana;
+.basico {
+    color: #3A7A8C;
+}
+
+.intermediario {
+    color: #12B4E0;
+}
+
+.avancado {
+    color: #2D98B5;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+.sub {
+    margin-left: 5px;
 }
 
 p {
-    color: rgb(100,118,135);
+    text-indent: 15px;
+    line-height: 1.5em;
 }
