@@ -5,165 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo de hover</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
-
-        @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Honk&display=swap');
-
-        @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Gloria+Hallelujah&family=Honk&display=swap');
-
-        @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Gloria+Hallelujah&family=Honk&family=Nosifer&display=swap');
-
-        /*
-        cores:
-        1 - #E5700F laranja
-        2 - #D22F21 vermelho
-        3 - #F08E6D rose
-        4 - #2F4EFF azul
-        5 - #D7A23A dourado
-        */
-       body {
-        background-color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 5px;
-       }
-
-       header {
-        background-color: #2F4EFF;
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
-        padding: 10px;
-        text-align: center;
-       }
-
-        #title_main {
-            font:400 50px honk,Arial;
+        div > p {
+            display: none;
         }
 
-        h2 {
-            font: 400 30px Gloria Hallelujah;
-            color: white;
+        div:hover > p{
+            display: block;
         }
-
-        article {
-            margin: auto;
-        }
-
-        section > h1 > strong {
-            font: normal 300 30px Nosifer;
-        }
-
-        section > h1 {
-            font: normal 700 30px Arial;
-            text-align: center;
-        }
-
-       abbr {
-        text-decoration: underline;
-       }
-
-       p {
-        text-align: center;
-        font-size: 25px;
-       }
-
-       code {
-        font-size: 20px;
-       }
-
-       #demonstração{
-        width: 200px;
-        height: 200px;
-        margin: auto;
-       }
-
-       #demonstração > div {
-        background-color: gray;
-        width: 200px;
-        height: 200px;
-        text-align: center;
-        line-height: 100px;
-        border: solid 2px black;
-        margin: auto;
-       }
-
-       #demonstração:hover > div {
-        background-color: red;
-        border-radius: 200px;
-        color: white;
-        font-size: 2em;
-       }
-
-       footer {
-        background-color: #E5700F;
-        border-bottom-right-radius: 7px;
-        border-bottom-left-radius: 7px;
-        color: white;
-        text-align: center;
-       }
-
-       footer > p {
-        font: italic 200 12px Arial;
-        text-decoration: underline
-       }
-
     </style>
 </head>
 <body>
-    <header>
-        <h1 id="title_main">Usercom</h1>
-        <h2><em>Exemplos de <abbr title="Propriedade CSS para estilização de páginas web.">Hover</abbr></em></h2>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse no texto abaixo</p>
+    <div>
+       PASSE O MOUSE AQUI
 
-    </header>
-    <main>
-        <section>
-            <h1>O que são <strong>Hovers</strong> em <abbr title="Cascading style sheets">CSS</abbr>?</h1>
-            <article>
-                    <p>
-                        Hover é uma Pseudo-class em CSS. Pseudo-class <br>
-                        são estados especiais de elementos no documento <abbr title="Hiper text markup language">HTML</abbr>. <br>
-                        E são especificados em seletores CSS. como no exemplo abaixo (em código e prático).
-                    </p>
-                <br>
-                <pre>
-                    <code>
-&lt;html&gt;
-
-&lt;style&gt;
-div {
-    background-color: gray;
-        width: 200px;
-        height: 200px;
-        text-align: center;
-        line-height: 100px;
-        border: solid 1px black;
-        margin: auto;
-}
-
-div:hover {
-    background-color: red;
-    border-radius: 200px;
-    color: white;
-    font-size: 2em;
-}
-&lt;/style&gt;
-
-&lt;div&gt;
-     div teste
-&lt;/div&gt;
-&lt;/html&gt;
-                    </code>
-                </pre>
-            </article>
-            <section id="demonstração">
-                <div>
-                    div teste
-                </div>
-            </section>
-
-        </section>
-    </main>
-    <footer>
-        <p>Rodapé </p>
-    </footer>
+       <p>SURPRESA</p>
+    </div>
 </body>
 </html>
