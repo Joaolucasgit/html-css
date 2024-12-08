@@ -12,10 +12,42 @@
             height: 200px;
             display: inline-block;
             border: 2px solid black;
+            transition: 1s;
         }
 
         div:hover {
             border-radius: 100px;
+            background-color: yellow;
+        }
+
+        a {
+            color: black;
+            text-decoration: double;
+            position: relative;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: white;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:focus {
+            text-decoration: line-through;
+        }
+
+        a:empty {
+            background-color: green;
+        }
+
+        a:checked {
+            color: pink;
         }
     </style>
 </head>
@@ -23,5 +55,12 @@
     <div id="d1">div 01</div>
     <div id="d2">div 02</div>
     <div id="d3">div 03</div>
+
+    <section>
+        <h1>Personalizando links</h1>
+        <p><a href="https://gustavoguanabara.github.io" target="_blank">Link de teste</a></p>
+        <p><a href="https://gustavoguanabara.github.io" target="_blank">Link de teste</a></p>
+        <p><a href="https://gustavoguanabara.github.io" target="_blank">Link de teste</a></p>
+    </section>
 </body>
 </html>

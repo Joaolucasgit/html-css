@@ -1,35 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pr-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelo de caixa</title>
     <style>
-        h1 { /*block level*/
-            background-color: rgba(128, 128, 128, 0.495);
-            box-sizing: border-box;
-            width: 300px;
-            height: 300px;
-
-            border-width: 10px;
-            border-style: groove;
-            border-color: black;
-
-            outline: 5px solid red;
-
-            margin: 10px;
-
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-color: rgb(207, 45, 45);
+            min-width: 200px;
+            max-width: 600px;
+            height: 100px;
+            padding: 10px;
+            margin: 10px auto 20px auto;
+            color: white;
         }
 
-        a { /*inline-level*/
-            box-sizing: border-box; 
-            border: 2px groove black;
-            padding: 2px;
+         a {
+            color: white;
+            text-decoration: none;
         }
+
+         a:hover {
+            text-decoration: underline;
+         }
+
+         main {
+            text-align: center;
+         }
+
+         .box {
+            background-color: gray;
+            width: 200px;
+            height: 200px;
+            margin: 0px 30px 15px 10px;
+            padding: 2px 5px 2px 5px;
+            display: inline-block;
+            transition: 1s;
+         }
+
+         .box:hover {
+            border: 10px solid black;
+         }
     </style>
 </head>
 <body>
-    <h1>Exemplos de caixas box-level</h1>
-    <p>Parágrafos também são exemplos de caixas box-level, mas <a href="#"> os links são exemplos de caixas inline-level</a>. vamos ver como tuso isso funciona.</p>
+    <header>
+        <h1>Exemplos de caixas</h1>
+        <p>Parágrafos tabmém são um exemplo de caixas box-level mas os <a href="#">os Links não são box-level e sim inline-level</a></p>
+    </header>
+    <main>
+        <div id="box-left" class="box">Caixa 1</div>
+        <div id="box-right" class="box">Caixa 2</div>
+    </main>
 </body>
 </html>

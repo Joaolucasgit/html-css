@@ -5,63 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pseudo-Element</title>
     <style>
-        /*
-        #  = id
-        .  = class
-        :  = Pseudo-class
-        :: = Pseudo-Elementos
-        >  = Children
-        */
         a {
             color: black;
-            text-decoration: underline;
-            font-size: 1.5em;
+            text-decoration: none;
+            margin-left: 10px;
+            position: relative;
         }
 
-        li {
-            margin-bottom: 10px;
+        a::after {
+            content: " ";
+            width: 5%;
+            height: 3px;
+            background-color: blue;  
+            transition: 0.6s;
+            bottom: 0;
+            left: 0;
+            position: absolute;
         }
 
-        a:hover {
-            background-color: darkgray;
-            border-radius: 10px;
-            padding: 10px;
+        a:hover::after {
+            width: 100%;
+        }
+        
+        div {
+            width: 100px;
+            height: 100px;
+            border: 2px solid lightgray;
+            text-align: center;
+            line-height: 100px;
+            margin-top: 20px;
+            position: relative;
         }
 
-        .especial::before {
-            content: '-> ';
+        div::after {
+            content: " ";
+            background-color: black;
+            width: 90%;
+            height: 3px;
+            bottom: 0;
+            left: 0;
         }
 
-        .especial::after {
-            content: ' Acesse novamente';
+        div:hover::after {
+            width: 95%;
         }
-
-        a:visited {
-            color: green;
-        }
-
-        h2::first-letter{
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 40px;
-            font-weight: 100;
-            text-decoration: underline;
-        }
-
-        h2::first-line {
-           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-           
-        }
+        
     </style>
 </head>
 <body>
-    <h1>Personalizando Links</h1>
-    <ul>
-        <li><a href="https://www.cursoemvideo.com" class="especial">site cursoemvideo</a></li>
-        <li><a href="https://youtube.com/cursoemvideo/" >canal youtube</a></li>
-        <li><a href="https://gustavoguanabara.github.io" class="especial">Github </a></li>
-    </ul>
-
-    <h2>Usando first-letter em css</h2>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias quidem nostrum neque ipsum iusto nulla beatae, repellat quisquam sit ullam error eligendi, sunt provident possimus iste iure velit ut nihil.</p>
+    <h1>Personalizando links</h1>
+    <p>Vamos brincar com Pseudo-Classes e Pseudo-Elementos</p>
+    <nav>
+        <a href="#">conteudo</a>
+        <a href="#">conteudo</a>
+    </nav>
+    <div>
+        divisao
+    </div>
 </body>
 </html>
