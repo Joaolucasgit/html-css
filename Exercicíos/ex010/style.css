@@ -1,6 +1,11 @@
-a:hover {
-    background-color: rgb(43, 43, 222);
-    border-radius: 20px;
-    padding: 8px;
-    color: white;
+a:visited {
+    color: black;
+}
+
+a:active {
+    color: gray;
+}
+
+a {
+    text-decoration: none;
 }

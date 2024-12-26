@@ -46,6 +46,23 @@
          .box:hover {
             border: 10px solid black;
          }
+
+         button {
+            background-color: rgb(75, 75, 177);
+            padding: 10px;
+            color: white;
+            border-top: 5px dashed black;
+            border-bottom: 5px dashed black;
+            outline: 2px dotted red;
+         }
+
+         button:active {
+            border-color: yellow;
+            outline-color: white;
+            background-color: green;
+            color: black;
+         }
+
     </style>
 </head>
 <body>
@@ -57,5 +74,6 @@
         <div id="box-left" class="box">Caixa 1</div>
         <div id="box-right" class="box">Caixa 2</div>
     </main>
+    <button>clique</button>
 </body>
 </html>

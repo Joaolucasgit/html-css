@@ -4,8 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: gray;
+            margin: 0;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(157, 146, 146);
+        }
+
+        nav {
+            background-color: rgb(89, 89, 89);
+            padding: 3px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+            position: relative;
+            
+        }
+
+        nav a::after {
+            content: "";
+            width: 1%;
+            height: 3px;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: 0.5s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <h1>Titulo principal</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">noticias</a>
+            <a href="#">tecnologia</a>
+            <a href="#">sobre</a>
+            <a href="#">contato</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>esportes,politica,economia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Dolar blabla</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet vitae, temporibus illo, voluptas quod natus unde aspernatur nemo ipsa culpa dignissimos vel. Eius sunt harum enim, esse ut ipsam corrupti.</p>
+                <aside>
+                    <p>escrito por mula sem cabeça</p>
+                </aside>
+            </article>
+        </section>
+        <section id="ultima-hora">
+            <h2>Um homem-aranha?</h2>
+            <p>Homem mascarado é visto soltando teia e escalando predios em nova york Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere quis tempora quam sunt nemo beatae commodi reprehenderit optio perferendis dicta deleniti dolorem et, corrupti aspernatur assumenda quae nostrum temporibus dolore!</p>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por <em>GustavoGuanabara</em></p>
+        <p><em>cursoemvídeo&copy;2024</p>
+    </footer>
 </body>
 </html>

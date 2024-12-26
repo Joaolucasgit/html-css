@@ -5,29 +5,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gradiente em CSS</title>
     <style> 
-    * { /*configurações globais */
-        height: 100%;
-    }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
         body {
-            background-color: rgb(106, 106, 255);
+            margin: 50px auto;
+            width: 85%;
+            background-image: radial-gradient(circle, rgb(22, 22, 89),rgb(100, 100, 202));
+            color: white;
         }
 
-        section {
-            background-image: linear-gradient(to right, rgb(51, 51, 87) 80%,#495C86,#4365B1);
+        header {
+            background-image: linear-gradient(200deg,#4c17a7dc,#5045E0);
+            padding: 5px;
             color: white;
-            width: 100%;
-            height: 200px;
-            border-radius: 4px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
         }
 
-        h1 {
+        header > h1 {
+            margin: 10px;
+        }
+
+        nav {
+            background-color: lightgray;
+            text-align: center;
+            padding: 4px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: black;
+            margin-left: 45px;
+            text-align: center;
+            padding: 4px;
+        }
+
+        nav > a:hover {
+            background-color: #A734DD;
+            width: 130%;
+        }
+
+        main > h1 {
+            text-align: center;
+        }
+
+        main { 
+            margin: 10px auto 5px auto;
+            border: 2px dashed black;
+            padding: 5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        main > .artigo {
+            width: 95%;
+            background-color: rgba(128, 128, 128, 0.541);
+            padding: 15px;
+            margin: 15px auto 0px auto;
+        }
+
+        .artigo > p {
+            line-height: 25px;
+            text-indent: 20px;
+            text-align: justify;
+        }
+
+        footer {
+            background-color: #09A2D5;
+            padding: 4px;
+        }
+
+        footer > h4,div,ul,li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        footer  a {
             color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <section>
-        
-    </section>
+    <header>
+        <h1>LOREM IPSUM</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elite.</p>
+    </header>
+    <nav>
+        <a href="#">HOME</a>
+        <a href="#">NOTICÍAS</a>
+        <a href="#">ESPORTES</a>
+        <a href="#">MAIS</a>
+    </nav>
+    <main>
+        <h1>ÚLTIMAS NOTÍCIAS...</h1>
+        <article class="article-top artigo">
+            <h2>Lorem</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis explicabo quod deserunt quas non maiores omnis totam consequatur voluptas nihil ullam inventore dolor, sequi adipisci fugit ad officia placeat nesciunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est aliquam id vero ut, ipsam sed quae eveniet blanditiis ipsa aperiam unde eaque nostrum placeat cumque impedit aliquid repellat accusamus! Harum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima illum molestias nemo ad error ipsam voluptatum sit! Esse nulla, eaque modi soluta voluptatibus explicabo a distinctio nihil dolore ipsum quia.</p>
+            <aside>
+                <strong>Escrito por josefo, flaviano</strong>
+            </aside>
+        </article>
+
+        <article class="article-bottom artigo">
+            <h2>LOREM IPSUM - DOLOR?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quasi repellat quam tenetur? Maxime quis, incidunt pariatur explicabo, quisquam, debitis odio veritatis facilis quibusdam ipsa soluta ut id quae a? Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae illum esse atque magnam accusantium perspiciatis nesciunt dicta est vel. Saepe et autem aliquid tempore soluta ut voluptatem exercitationem nobis architecto! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum quas ea corrupti placeat ad, in vel culpa dolore quibusdam eaque. Aperiam illo ea fugiat. Similique dolorum distinctio odio eaque vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magni fugit ad? Quo dicta cumque unde animi veniam. Quisquam dolor iste quidem quod magnam assumenda est dignissimos dolorem. Doloremque, impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quasi a fugiat, similique architecto optio fuga dignissimos, cumque iure assumenda placeat, minus provident dicta ullam! Accusantium quo quod fugiat rem! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur distinctio voluptatem similique asperiores eum reprehenderit aperiam tempore sapiente, maiores id, ab ullam mollitia eos inventore explicabo ut alias voluptatibus! Necessitatibus!</p>
+        </article>
+    </main>
+    <footer>
+        <h4>COPYRIGHT</h4>
+        <div>
+            &copy;
+        </div>
+        <ul>
+            <li><a href="#">TERMOS E PRIVACIDADE</a></li>
+            <li><a href="#">SOBRE</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
